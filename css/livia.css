@@ -1,4 +1,4 @@
-:root{--bg:#550415;--deep:#420310;--dark:#2f020b;--card:#650a20;--gold:#d8a960;--cream:#f4e9da;--soft:#d9c3b0;--line:#7d2337}
+:root{--bg:#550415;--deep:#420310;--dark:#2f020b;--card:#650a20;--gold:#f2d4a2;--cream:#f4e9da;--soft:#d9c3b0;--line:#7d2337}
 body{background:var(--bg);color:var(--cream);font-family:"Nunito Sans",sans-serif}
 h1,h2,h3,h4,h5,h6{color:var(--cream)}
 a{color:var(--gold)}a:hover{color:var(--cream);text-decoration:none}
@@ -9,6 +9,11 @@ a{color:var(--gold)}a:hover{color:var(--cream);text-decoration:none}
 .lv-nav{display:flex;gap:28px;margin:0;padding:0;list-style:none}
 .lv-nav a{color:var(--cream);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:4px 0;border-bottom:2px solid transparent}
 .lv-nav a:hover,.lv-nav a.on{color:var(--gold);border-color:var(--gold)}
+.lv-head-right{display:flex;align-items:center;gap:16px}
+.lv-lang{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:16px;padding:4px 12px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:1px}
+.lv-lang:hover{background:var(--gold);color:var(--deep)}
+html[dir="rtl"] body{font-family:"Cairo","Nunito Sans",sans-serif}
+html[dir="rtl"] .lv-nav{gap:20px}
 .lv-cart{color:var(--gold);font-weight:700;white-space:nowrap}
 .lv-cart b{background:var(--gold);color:var(--deep);border-radius:50%;padding:1px 7px;font-size:12px;margin-left:4px}
 .lv-hero{padding:70px 0}
@@ -62,3 +67,8 @@ a{color:var(--gold)}a:hover{color:var(--cream);text-decoration:none}
 .footer__about .footer__logo img{height:60px}
 .footer__copyright__text a{color:var(--gold)}
 @media(max-width:767px){.lv-head img{height:52px}.lv-nav{gap:16px}.lv-hero{padding:40px 0}}
+@media(max-width:575px){.lv-grid{grid-template-columns:repeat(2,1fr);gap:12px}.lv-info{padding:10px}.lv-info p{display:none}.lv-row{flex-direction:column}.lv-add{padding:9px}}
+.lv-ar{direction:rtl;font-family:"Nunito Sans",sans-serif;color:var(--gold);font-size:20px;font-weight:700;margin:-6px 0 14px}
+.lv-social{display:flex;gap:14px;margin-top:10px}
+.lv-social a{color:var(--gold);font-size:20px;display:inline-flex;align-items:center;gap:6px}
+.lv-social a:hover{color:var(--cream)}
