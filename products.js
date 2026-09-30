@@ -1,7 +1,7 @@
 // ===== SHOP SETTINGS =====
 const SHOP = {
   name: "Livia",
-  whatsapp: "201000000000",   // your number: country code first, no + or spaces
+  whatsapp: "+201067818750",   // your number: country code first, no + or spaces
   currency: "EGP",
   shipping: 60,               // flat delivery fee
   freeShippingOver: 1000      // free delivery above this amount (0 = off)
